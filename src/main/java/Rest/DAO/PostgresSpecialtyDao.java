@@ -97,12 +97,7 @@ public class PostgresSpecialtyDao implements SpecialtyDao {
 			jdbcTemplate.update(query);
 
 		} catch (DataIntegrityViolationException e) {
-			Alert alert = new Alert(AlertType.ERROR);
-			alert.setTitle("Input Error");
-			alert.setHeaderText(null);
-			alert.setContentText(
-					"For a given specialty, there are associated employees. Delete them first, and only then you can delete the specialty.");
-			alert.showAndWait();
+			System.out.println(e);
 		}
 	}
 

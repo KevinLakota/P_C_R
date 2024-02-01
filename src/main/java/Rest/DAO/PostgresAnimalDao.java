@@ -266,11 +266,7 @@ public class PostgresAnimalDao implements AnimalDao {
 			jdbcTemplate.update(query);
 
 		} catch (DataIntegrityViolationException e) {
-			Alert alert = new Alert(AlertType.ERROR);
-			alert.setTitle("Input Error");
-			alert.setHeaderText(null);
-			alert.setContentText("For a given animal, there are associated examinations. Delete them first, and only then you can delete the animal.");
-			alert.showAndWait();
+			System.out.println(e);
 		}
 	}
 
