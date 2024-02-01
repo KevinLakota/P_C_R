@@ -4,10 +4,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import Rest.DAO.*;
 
+import javax.sql.DataSource;
+
 
 @Configuration
 public class config {
-
     private final JdbcTemplate jdbcTemplate;
     public config(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
