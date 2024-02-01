@@ -1,7 +1,5 @@
 package Rest.DAO;
 
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
