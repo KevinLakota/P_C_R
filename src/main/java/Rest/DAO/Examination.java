@@ -10,6 +10,10 @@ public class Examination {
 	private Long empl;
 	private Long animal;
 
+	public Examination() {
+
+	}
+
 	public Examination(Long idExam, LocalDateTime date, String comment,
 			String photo, Long empl, Long animal) {
 		super();

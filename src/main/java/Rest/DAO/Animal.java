@@ -18,6 +18,10 @@ public class Animal {
 	private Long idSpecies;
 	private String chipNumber;
 
+	public Animal() {
+
+	}
+
 	public Animal(String name, Date birthDate, int weight, boolean castration, String sex,
 			String originCountryCode, String note, String photo, Date dateLastVisit, Date dateNextVisit,
 			String chipNumber, Long idOwner, Long idSpecies) {

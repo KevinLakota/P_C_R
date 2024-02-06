@@ -18,6 +18,10 @@ public class Employee {
 	private String photo;
 	private Long idSpecialty;
 
+	public Employee() {
+
+	}
+
 	public Employee(Long idEmpl, String namePefix, String firstName, String surname, String nameSuffix,
 			Date birthDate, Date graduationDate, String sex, double hourWage, String phoneNumber, String email,
 			int contractNumber, String photo, Long idSpecialty) {

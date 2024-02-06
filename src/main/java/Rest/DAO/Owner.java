@@ -7,6 +7,10 @@ public class Owner {
 	private String phoneNumber;
 	private String email;
 
+	public Owner() {
+
+	}
+
 	public Owner(Long idOwner, String firstName, String surname, String phoneNumber, String email) {
 		super();
 		this.idOwner = idOwner;

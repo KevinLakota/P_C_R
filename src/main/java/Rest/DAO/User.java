@@ -8,7 +8,9 @@ public class User {
 	private boolean admin;
 	private Long idOwner;
 	private Long idEmpl;
+	public User() {
 
+	}
 	public User(Long idUser, String username, String passwd, byte[] salt, boolean admin, Long idOwner, Long idEmpl) {
 		this.idUser = idUser;
 		this.username = username;

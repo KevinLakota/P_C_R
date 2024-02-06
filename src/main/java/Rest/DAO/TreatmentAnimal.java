@@ -5,6 +5,10 @@ public class TreatmentAnimal {
 	private Long idAnimal;
 	private String when;
 
+	public TreatmentAnimal() {
+
+	}
+
 	public TreatmentAnimal(Long idTreatment, Long idAnimal, String when) {
 		super();
 		this.idTreatment = idTreatment;

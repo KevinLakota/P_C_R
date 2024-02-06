@@ -2,7 +2,6 @@ package Rest.Rest;
 
 import org.springframework.web.bind.annotation.*;
 import Rest.DAO.*;
-
 import java.util.List;
 
 @RestController

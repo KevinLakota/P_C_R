@@ -8,6 +8,10 @@ public class Specialty {
 		this.specialty = specialty;
 	}
 
+	public Specialty() {
+
+	}
+
 	public Specialty(long id, String specialty) {
 		idSpecialty = id;
 		this.specialty = specialty;
