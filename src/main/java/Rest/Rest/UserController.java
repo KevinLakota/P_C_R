@@ -18,7 +18,6 @@ public class UserController {
     public User save(@RequestBody User user) {
         return userDao.save(user);
     }
-
     @GetMapping("/user/getByUsername/{username}")
     public User getByUsername(@PathVariable String username) {
         return userDao.getByUsername(username);
@@ -38,7 +37,6 @@ public class UserController {
     public void delete(@PathVariable Long id) {
         userDao.delete(id);
     }
-
     @GetMapping("/user/getAll")
     public List<User> getAll() {
         return userDao.getAll();

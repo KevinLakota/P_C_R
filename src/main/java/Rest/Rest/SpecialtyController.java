@@ -9,9 +9,7 @@ public class SpecialtyController {
 
     private final SpecialtyDao specialtyDao;
 
-    public SpecialtyController(SpecialtyDao specialtyDao) {
-        this.specialtyDao = specialtyDao;
-    }
+    public SpecialtyController(SpecialtyDao specialtyDao) {this.specialtyDao = specialtyDao;}
 
     @PostMapping("/specialty/save")
     public Specialty save(@RequestBody Specialty specialty) {
