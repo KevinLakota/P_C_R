@@ -12,7 +12,7 @@ public class EmployeeController {
     }
 
     @PostMapping("/employee/save")
-    public Employee save(Employee employee) {
+    public Employee save(@RequestBody Employee employee) {
         return employeeDao.save(employee);
     }
 

@@ -14,7 +14,7 @@ public class SpecialtyController {
     }
 
     @PostMapping("/specialty/save")
-    public Specialty save(Specialty specialty) {
+    public Specialty save(@RequestBody Specialty specialty) {
         return specialtyDao.save(specialty);
     }
 

@@ -14,7 +14,7 @@ public class AnimalController {
     }
 
     @PostMapping("/animal/save")
-    public Animal save(Animal animal) {
+    public Animal save(@RequestBody Animal animal) {
         return animalDao.save(animal);
     }
 

@@ -15,7 +15,7 @@ public class SpeciesController {
     }
 
     @PostMapping("/species/save")
-    public TreatmentAnimal.Species save(TreatmentAnimal.Species species) {
+    public TreatmentAnimal.Species save(@RequestBody TreatmentAnimal.Species species) {
         return speciesDao.save(species);
     }
 

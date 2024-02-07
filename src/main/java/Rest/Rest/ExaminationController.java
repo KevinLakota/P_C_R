@@ -16,7 +16,7 @@ public class ExaminationController {
     }
 
     @PostMapping("/examination/save")
-    public Examination save(Examination examination) {
+    public Examination save(@RequestBody Examination examination) {
         return examinationDao.save(examination);
     }
 

@@ -13,7 +13,7 @@ public class OwnerController {
     }
 
     @PostMapping("/owner/save")
-    public Owner save(Owner owner) {
+    public Owner save(@RequestBody Owner owner) {
         return ownerDao.save(owner);
     }
 

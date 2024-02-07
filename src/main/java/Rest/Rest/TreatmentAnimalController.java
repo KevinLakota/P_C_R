@@ -16,7 +16,7 @@ public class TreatmentAnimalController {
     }
 
     @PostMapping("/treatmentAnimal/save")
-    public void saveTreatmentAnimal(TreatmentAnimal ta) {
+    public void save(@RequestBody TreatmentAnimal ta) {
         treatmentAnimalDao.save(ta);
     }
 
